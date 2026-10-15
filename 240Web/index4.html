@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: black; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <header class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10"></div>
+                <div class="col-1 text-secondary">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="col-1 text-secondary">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mt-4">
+                <div class="col-1"></div>
+                <div class="col-7"><img class="img-fluid" src="logo.png"> </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+                    <a class="nav-link  text-white" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link text-white" aria-current="page" href="index2.html">Historia</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="index3.html">Artistas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Eventos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="index4.html">F2F Bcn 22/03/2025</a></li>
+                            <li><a class="dropdown-item" href="index5.html">Monegros 2025</a></li>
+                            <li><a class="dropdown-item" href="index6.html">bootstrap</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 border-bottom border-white pb-2 mb-5"></div>
+            <div class="col-1"></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-3 mt-5 text-light">
+                    <h1>¿Qué es F2F?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="accordion col-8 mt-5" id="accordionExample">
+                    <div class="accordion-item bg-dark text-white">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                F2F
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-white text-center">
+                                    F2F (Face to Face) es un concepto dentro de la escena electrónica que representa la
+                                    conexión directa entre el DJ y el público. Más que un evento, es una experiencia donde
+                                    la energía fluye sin barreras, llevando la música a un nivel más intenso y cercano.
+
+                                    En 240 KM/H, F2F se traduce en eventos exclusivos donde los artistas y los asistentes
+                                    comparten un espacio vibrante, sin distracciones ni filtros. Aquí, los sets se
+                                    convierten en viajes sonoros en los que cada drop, cada kick y cada melodía se sienten
+                                    cara a cara, en su estado más puro.
+
+                                    Si buscas una experiencia auténtica dentro del movimiento 240 SOUND, F2F es el lugar
+                                    donde la música y la energía se encuentran sin intermediarios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-5 mt-5 text-light">
+                    <h1>Barcelona 22/03/2025</h1>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 ms-5"></div>
+                <div class="col-5 text-end ms-5 ">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        Que no te lo cuenten
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="offcanvas offcanvas-end bg-dark text-light" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Registrate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="resposta.php" method="post" class=" w-100">
+                    <input class="form-control" style="border-color: black;"type="text" placeholder="Nombre y apellidos" aria-label="Nombre y apellidos" name="texte">
+                    <br>
+                    <input class="form-control" style="border-color: black;"type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" name="email">
+                    <br>
+                    <input type="submit" value="Enviar"><br><br>
+                </form>
+            </div>
+        </div>
+        
+            
+
+    </main>
+    <footer class="bg-secondary">
+    
+        <div class="row mt-4">
+            <div class="col-12 d-flex justify-content-center text-dark mt-5">
+                <h3>¡Suscríbete a nuestra newsletter!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-secondary mt-3">
+                 <form class="d-flex  w-50">
+                    <input class="form-control me-2" style="border-color: black;"type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico">
+                    <button class="btn btn-outline-success" style="background-color: black;" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-center text-secondary mt-3">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
